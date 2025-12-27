@@ -25,7 +25,7 @@ This tool is intended exclusively for:
 
 ## 📋 Requirements
 
-- Python 3.6+
+- Python 3.12+
 - Required libraries:
   ```bash
   pip install requests beautifulsoup4 termcolor
@@ -37,11 +37,6 @@ This tool is intended exclusively for:
    ```bash
    git clone https://github.com/Christian93111/ctf-bruteforcer-login.git
    cd ctf-bruteforcer-login
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
    ```
 
 ## 📖 Usage
