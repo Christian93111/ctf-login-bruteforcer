@@ -43,7 +43,7 @@ This tool is intended exclusively for:
 
 Run the script:
 ```bash
-python bruteforce.py
+python login_brute_ctf.py
 ```
 
 You'll be prompted for:
