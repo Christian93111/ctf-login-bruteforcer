@@ -39,7 +39,7 @@ This tool is intended exclusively for:
    cd ctf-login-bruteforcer.git
    ```
 
-## 📖 Usage
+## Usage
 
 Run the script:
 ```bash
