@@ -2,7 +2,7 @@
 
 A Python-based brute force tool designed for CTF (Capture The Flag) competitions. This script automates login attempts with CSRF token handling, IP spoofing, and customizable parameters.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 **FOR EDUCATIONAL AND AUTHORIZED CTF USE ONLY**
 
@@ -13,17 +13,17 @@ This tool is intended exclusively for:
 
 **Unauthorized access to computer systems is illegal.** Only use this tool on systems you own or have explicit written permission to test.
 
-## ✨ Features
+## Features
 
-- 🎯 **Automated Brute Force**: Username/password combination testing
-- 🛡️ **CSRF Token Handling**: Automatically extracts and submits hidden form tokens
-- 🌐 **IP Spoofing**: Randomized X-Forwarded-For headers to evade rate limiting
-- 🔍 **Protocol Detection**: Auto-detects HTTP/HTTPS
-- 🎨 **Colored Output**: Easy-to-read terminal feedback
-- ⚙️ **Customizable**: Configure field names, delays, and success indicators
-- 🔄 **Session Management**: Maintains cookies across requests
+- **Automated Brute Force**: Username/password combination testing
+- **CSRF Token Handling**: Automatically extracts and submits hidden form tokens
+- **IP Spoofing**: Randomized X-Forwarded-For headers to evade rate limiting
+- **Protocol Detection**: Auto-detects HTTP/HTTPS
+- **Colored Output**: Easy-to-read terminal feedback
+- **Customizable**: Configure field names, delays, and success indicators
+- **Session Management**: Maintains cookies across requests
 
-## 📋 Requirements
+## Requirements
 
 - Python 3.12+
 - Required libraries:
@@ -31,7 +31,7 @@ This tool is intended exclusively for:
   pip install requests beautifulsoup4 termcolor
   ```
 
-## 🚀 Installation
+## Installation
 
 1. Clone the repository:
    ```bash
@@ -71,7 +71,7 @@ You'll be prompted for:
 [-] Trying: password123        | IP: 192.168.1.42
 ```
 
-## 🎯 Success Detection
+## Success Detection
 
 The script checks for these flag formats in the response:
 - `flag{...}`
@@ -80,7 +80,7 @@ The script checks for these flag formats in the response:
 
 Modify `success_strings` in the code to match your CTF's flag format.
 
-## ⚙️ Configuration
+## Configuration
 
 ### Custom Field Names
 If the login form uses different input names:
@@ -98,14 +98,14 @@ Modify the `success_strings` list to detect different success patterns:
 success_strings = ["flag{", "CTF{", "Welcome", "Dashboard"]
 ```
 
-## 📁 Wordlists
+## Wordlists
 
 Popular wordlists for CTF challenges:
 - [SecLists](https://github.com/danielmiessler/SecLists)
 - [RockYou](https://github.com/brannondorsey/naive-hashcat/releases)
 - Custom CTF-specific wordlists
 
-## 🔧 Technical Details
+## Technical Details
 
 ### CSRF Protection Bypass
 The script automatically:
@@ -120,16 +120,12 @@ Randomizes these headers per request:
 
 **Note**: Effectiveness depends on server configuration. Many servers ignore these headers.
 
-## 🛑 Limitations
+## Limitations
 
 - **Rate Limiting**: May not bypass sophisticated rate limiting
 - **CAPTCHA**: Cannot bypass CAPTCHA challenges
 - **WAF/IDS**: May be detected by Web Application Firewalls
 - **Account Lockout**: Target may implement account lockout policies
-
-## 📧 Contact
-
-For questions or issues, please open a GitHub issue or contact the maintainer.
 
 ---
 
